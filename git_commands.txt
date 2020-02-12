@@ -1,0 +1,31 @@
+geciiiiiiiii rájöttem bazdmeg xdddddd
+
+na szóval.
+
+először is ahhoz hogy !!! letöltsd !!! a cuccokat ne hozz létre semmilyen mappát mert összeszarja magát.
+
+1. gyökérmappa (htdocs) itt elindítod a git bash-t
+2. bejelentkezel (mondjuk nekem anélkül is ment szóval wtf) (git config --global user.name "", git config --global user.email "") mondjuk ez nem teljesen bejelentkezés de tökmindegy (ezt éppen ki lehet hagyni)
+3. git clone https://github.com/L-D-Inc/onlinefilmek.hu_admin.git (ezzel létrehoz egy mappát, ami a repository neve és ezért kell a htdocs-ba lenni plusz ha már létezik ez a mappa akkor error úgyhogy ez tényleg csak a legelső alkalommal használható ha mondjuk valaki csatlakozik a csapathoz vagy bármi)
+
+igazából a letöltés ennyi.
+
+update:
+1. vagy paranccsal mész át vagy bezárod és a létrehozott mappában elindítod mégegyszer. ha paranccsal csinálod (én igen :D): cd /d/htdocs/onlinefilmek.hu_admin/ (nyílván te a saját utadat írd)
+2. le tudod ellenőrizni milyen repo-hoz vagy csatlakozva: git remote -v
+3. ha nem vagy még csatlakozva nem fog működni se a frissítés se te nem tudsz commit-olni majd
+4. csatlakozol a repo-hoz: git remote add https://github.com/L-D-Inc/onlinefilmek.hu_admin.git
+5. meg kell adnod hogy te update-elni akarsz (git remote update origin)
+6. le tudod ellenőrizni hogy van-e változás a github-on: git diff origin vagy origin/master vagy origin/bármilyen branch (ág), ami van
+6. update: git merge origin (ezzel lefrissíti a cuccost)
+
+commit:
+1. git status (megnézi van-e új vagy változtatott fájlod, ha van pirossal jelzi, de csak akkor ha nem commit-oltad el). ezt a parancsot mondjuk nem csak commit-olásnál lehet használni, de tökmindegy
+2. git add "fájl.php" (hozzáadod a listához vagy nem tom)
+3. git commit -m "Ez egy commit". hozzáad egy üzenetet a commit-hoz :D
+4. git push -u origin master. feltölti a repo-ba a cuccost
+ennyi igazából
+
+ha ki akarsz "jelentkezni", aminek kb semmi értelme:
+git config --global --unset user.name
+git config --global --unset user.email
