@@ -1,4 +1,3 @@
-hello
 <!DOCTYPE html>
 <html lang="hu" dir="ltr">
   <head>
@@ -112,4 +111,3 @@ hello
     </div>
   </body>
 </html>
-<!-- dawe buzi -->
